@@ -211,7 +211,7 @@ if( !class_exists('plugin_notes')) {
 				$note_color = ( ( isset( $note['color'] ) && $note['color'] !== '' ) ? $note['color'] : $this->defaultcolor );
 
 				$actions[] = '<a href="#" onclick="edit_plugin_note(\''. esc_js( $plugin_safe_name ) .'\'); return false;" id="wp-plugin_note_edit'. esc_attr( $plugin_safe_name ) .'" class="edit">'. __('Edit note', 'plugin-notes') .'</a>';
-				$actions[] = '<a href="#" onclick="delete_plugin_note(\''. esc_js( $plugin_safe_name ) .'\'); return false;" id="wp-plugin_note_delete'. esc_attr( $plugin_safe_name ) .'" class="delete">'. __('Delete note', 'plugin-notes') .'</a>';
+				$actions[] = '<a href="#" onclick="delete_plugin_note(\''. esc_js( $plugin_safe_name ) .'\'); return false;" id="wp-plugin_note_delete'. esc_attr( $plugin_safe_name ) .'" class="jrf_delete">'. __('Delete note', 'plugin-notes') .'</a>';
 			} else {
 				$note_class = 'wp-plugin_note_box_blank';
 				$actions[] = '<a href="#" onclick="edit_plugin_note(\''. esc_js( $plugin_safe_name ) .'\'); return false;">'. __('Add plugin note', 'plugin-notes') .'</a>';
